@@ -5,21 +5,35 @@
         "experienciasProfissionais": "Experiências Profissionais",
         "formacaoAcademica": "Formação Acadêmica"
     },
+    "labels": {
+        "nascimento": "Nascimento:",
+        "email": "E-mail:",
+        "telefone": "Telefone:",
+        "linkedin": "LinkedIn:",
+        "github": "GitHub:"
+    },
     "informacoesPessoais": {
         "nomeCompleto": "Ryan Alexandrino da Silva",
         "dataNascimento": "25/11/2002",
         "emailContato": "ryanalexandriino@gmail.com",
         "telefoneContato": "(11) 97702-5103",
         "linkedinPerfil": "linkedin.com/in/ryanalexandrino/",
-        "githubPerfil": "github.com/ryanalexandrino"
+        "githubPerfil": "github.com/ryanalexandrino",
+        "fotoArquivo": "foto-perfil.png"
     },
     "habilidades": [
-        "JavaScript",
         "HTML5 & CSS3",
+        "JavaScript",
+        "Angular",
         "Python",
+        "Java",
         "Git & GitHub",
         "MySQL",
-        "MongoDB"
+        "MongoDB",
+        "OracleDB",
+        "Power BI",
+        "Looker Studio"
+        
     ],
     "experiencias": [
         {
@@ -35,7 +49,7 @@
             "descricao": "Montagem e manutenção de computadores, infraestrutura e redes, instalação de software, configuração e manutenção de hardware, criação e manutenção de planilhas, atendimento ao público, emissão de nota fiscal, abertura e fechamento de caixa, emissão de autorizações SADT, abertura de fichas de atendimento e faturamento, anexos de documentos e fichas em nuvem."
         },
         {
-            "titulo": "Auxiliar de de Segurnaça do Trabalho",
+            "titulo": "Auxiliar de Segurança do Trabalho",
             "empresa": "Termocolor Ind. e Com. de Plásticos Ltda",
             "periodo": "Outubro/2021 - Fevereiro/2023",
             "descricao": "Criação, estruturação e manutenção de planilhas de estoque e vencimentos de EPI´s e documentação, entrega e fiscalização do uso de EPI´s e uniformes, recolhimento da assinaturas de funcionários mediante a documentos de SST, organização e arquivamento de documentos (gestão do arquivo morto), controle da entrega de EPI´s e vencimento de seus CA´s por meio do ERP - TOTVS Protheus."
@@ -49,5 +63,4 @@
             "descricao": "Formação superior em programação, algoritmos, estruturas de dados e engenharia de software."
         }
     ]
-
 }

@@ -13,13 +13,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const dados = await response.json();
             
+            // Preencher títulos das seções
+            document.getElementById('tituloInformacoes').textContent = dados.titulos.informacoesPessoais;
+            document.getElementById('tituloHabilidades').textContent = dados.titulos.conhecimentos;
+            document.getElementById('tituloExperiencias').textContent = dados.titulos.experienciasProfissionais;
+            document.getElementById('tituloEducacao').textContent = dados.titulos.formacaoAcademica;
+            
+            // Preencher labels dos campos
+            document.getElementById('labelNascimento').textContent = dados.labels.nascimento;
+            document.getElementById('labelEmail').textContent = dados.labels.email;
+            document.getElementById('labelTelefone').textContent = dados.labels.telefone;
+            document.getElementById('labelLinkedin').textContent = dados.labels.linkedin;
+            document.getElementById('labelGithub').textContent = dados.labels.github;
+            
             // Preencher informações pessoais
             document.getElementById('nomeCompleto').textContent = dados.informacoesPessoais.nomeCompleto;
             document.getElementById('dataNascimento').textContent = dados.informacoesPessoais.dataNascimento;
             document.getElementById('emailContato').textContent = dados.informacoesPessoais.emailContato;
             document.getElementById('telefoneContato').textContent = dados.informacoesPessoais.telefoneContato;
-            document.getElementById('linkedinPerfil').textContent = dados.informacoesPessoais.linkedinPerfil;
-            document.getElementById('githubPerfil').textContent = dados.informacoesPessoais.githubPerfil;
+            
+            // Criar links clicáveis para LinkedIn e GitHub
+            const linkedinElement = document.getElementById('linkedinPerfil');
+            linkedinElement.innerHTML = `<a href="https://${dados.informacoesPessoais.linkedinPerfil}" target="_blank" rel="noopener noreferrer">${dados.informacoesPessoais.linkedinPerfil}</a>`;
+            
+            const githubElement = document.getElementById('githubPerfil');
+            githubElement.innerHTML = `<a href="https://${dados.informacoesPessoais.githubPerfil}" target="_blank" rel="noopener noreferrer">${dados.informacoesPessoais.githubPerfil}</a>`;
+            
+            // Configurar foto
+            const fotoElement = document.getElementById('fotoProfile');
+            if (dados.informacoesPessoais.fotoArquivo) {
+                fotoElement.src = dados.informacoesPessoais.fotoArquivo;
+                fotoElement.style.display = 'block';
+            }
             
             // Preencher habilidades
             const listaHabilidades = document.getElementById('listaHabilidades');
@@ -50,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             `).join('');
             
             // Esconder botão e mostrar currículo
-            botaoCarregar.style.display = 'none';
+            document.querySelector('.botao-container').style.display = 'none';
             containerCurriculo.style.display = 'block';
             
         } catch (error) {
