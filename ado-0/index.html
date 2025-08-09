@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="botaoCarregar" class="botao-carregar">Carregar Currículo</button>
+    
+    <div id="containerCurriculo" class="container-curriculo">
+        <div class="cabecalho">
+            <h1 id="nomeCompleto"></h1>
+        </div>
+        
+        <div class="conteudo">
+            <div class="barra-lateral">
+                <div class="secao-foto">
+                    Foto
+                </div>
+                
+                <div class="secao-informacoes">
+                    <h3 id="tituloInformacoes"> Informações Pessoais</h3>
+                    <div class="info-item">
+                        <span class="info-label">Nascimento:</span>
+                        <span id="dataNascimento">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">E-mail:</span>
+                        <span id="emailContato">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Telefone:</span>
+                        <span id="telefoneContato">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">LinkedIn:</span>
+                        <span id="linkedinPerfil">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">GitHub:</span>
+                        <span id="githubPerfil">-</span>
+                    </div>
+                </div>
+                
+                <div class="secao-habilidades">
+                    <h3 id="tituloHabilidades">Conhecimentos</h3>
+                    <div id="listaHabilidades" class="lista-habilidades"></div>
+                </div>
+            </div>
+            
+            <div class="conteudo-principal">
+                <div class="secao-experiencias">
+                    <h2 class="titulo-secao" id="tituloExperiencias">Experiências Profissionais</h2>
+                    <div id="listaExperiencias"></div>
+                </div>
+                
+                <div class="secao-educacao">
+                    <h2 class="titulo-secao" id="tituloEducacao">Formação Acadêmica</h2>
+                    <div id="listaEducacao"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

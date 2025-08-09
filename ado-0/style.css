@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.botao-carregar {
+    background: linear-gradient(135deg, #5B9BD5, #4A7BA7);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.botao-carregar:hover {
+    background: linear-gradient(135deg, #4A7BA7, #5B9BD5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.container-curriculo {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.cabecalho {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    min-height: 600px;
+}
+
+.barra-lateral {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+}
+
+.secao-foto {
+    background-color: #e9ecef;
+    border: 2px dashed #6c757d;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.secao-informacoes {
+    margin-bottom: 25px;
+}
+
+.secao-informacoes h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #343a40;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 5px;
+}
+
+.info-item {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #495057;
+}
+
+.info-label {
+    font-weight: bold;
+    display: inline-block;
+    width: 80px;
+}
+
+.secao-habilidades h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #343a40;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 5px;
+}
+
+.lista-habilidades {
+    font-size: 14px;
+    color: #495057;
+}
+
+.habilidade-item {
+    margin-bottom: 5px;
+    padding: 2px 0;
+}
+
+.conteudo-principal {
+    padding: 20px;
+}
+
+.secao-experiencias,
+.secao-educacao {
+    margin-bottom: 30px;
+}
+
+.titulo-secao {
+    font-size: 18px;
+    color: #343a40;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.item-experiencia,
+.item-educacao {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.item-experiencia:last-child,
+.item-educacao:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.titulo-item {
+    font-size: 16px;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+
+.empresa-item,
+.instituicao-item {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.periodo-item {
+    font-size: 12px;
+    color: #6c757d;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.descricao-item {
+    font-size: 14px;
+    color: #495057;
+    line-height: 1.4;
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .barra-lateral {
+        border-right: none;
+        border-bottom: 1px solid #dee2e6;
+        order: 1;
+    }
+
+    .conteudo-principal {
+        order: 2;
+        padding: 15px;
+    }
+
+    .secao-foto {
+        padding: 30px 15px;
+    }
+
+    .cabecalho h1 {
+        font-size: 20px;
+    }
+
+    .titulo-secao {
+        font-size: 16px;
+    }
+
+    .info-label {
+        width: 70px;
+        font-size: 13px;
+    }
+
+    .info-item {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .cabecalho {
+        padding: 15px;
+    }
+
+    .barra-lateral,
+    .conteudo-principal {
+        padding: 15px;
+    }
+
+    .botao-carregar {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .secao-foto {
+        padding: 25px 10px;
+        font-size: 13px;
+    }
+}

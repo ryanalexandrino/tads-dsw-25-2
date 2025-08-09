@@ -1,0 +1,53 @@
+{
+    "titulos": {
+        "informacoesPessoais": "Informações Pessoais",
+        "conhecimentos": "Conhecimentos",
+        "experienciasProfissionais": "Experiências Profissionais",
+        "formacaoAcademica": "Formação Acadêmica"
+    },
+    "informacoesPessoais": {
+        "nomeCompleto": "Ryan Alexandrino da Silva",
+        "dataNascimento": "25/11/2002",
+        "emailContato": "ryanalexandriino@gmail.com",
+        "telefoneContato": "(11) 97702-5103",
+        "linkedinPerfil": "linkedin.com/in/ryanalexandrino/",
+        "githubPerfil": "github.com/ryanalexandrino"
+    },
+    "habilidades": [
+        "JavaScript",
+        "HTML5 & CSS3",
+        "Python",
+        "Git & GitHub",
+        "MySQL",
+        "MongoDB"
+    ],
+    "experiencias": [
+        {
+            "titulo": "Assistente de Suporte Técnico",
+            "empresa": "Go!Mec Auto Peças",
+            "periodo": "Julho/2024 - Presente",
+            "descricao": "Montagem e manutenção de computadores, infraestrutura e redes, atendimento aos usuários internos de maneira remota e presencial quanto a diagnósticos e resolução de problemas relacionados a tecnologia em geral, criação e manutenção de planilhas, tratamento de dados, criação de dashboards."
+        },
+        {
+            "titulo": "Auxiliar de TI",
+            "empresa": "Diffusion Medicina Diagnóstica",
+            "periodo": "Agosto/2023 - Julho/2024",
+            "descricao": "Montagem e manutenção de computadores, infraestrutura e redes, instalação de software, configuração e manutenção de hardware, criação e manutenção de planilhas, atendimento ao público, emissão de nota fiscal, abertura e fechamento de caixa, emissão de autorizações SADT, abertura de fichas de atendimento e faturamento, anexos de documentos e fichas em nuvem."
+        },
+        {
+            "titulo": "Auxiliar de de Segurnaça do Trabalho",
+            "empresa": "Termocolor Ind. e Com. de Plásticos Ltda",
+            "periodo": "Outubro/2021 - Fevereiro/2023",
+            "descricao": "Criação, estruturação e manutenção de planilhas de estoque e vencimentos de EPI´s e documentação, entrega e fiscalização do uso de EPI´s e uniformes, recolhimento da assinaturas de funcionários mediante a documentos de SST, organização e arquivamento de documentos (gestão do arquivo morto), controle da entrega de EPI´s e vencimento de seus CA´s por meio do ERP - TOTVS Protheus."
+        }
+    ],
+    "educacao": [
+        {
+            "titulo": "Tecnologia em Análise e Desenvolvimento de Sistemas",
+            "instituicao": "Centro Universitário SENACSP",
+            "periodo": "2024 - 2027",
+            "descricao": "Formação superior em programação, algoritmos, estruturas de dados e engenharia de software."
+        }
+    ]
+
+}
